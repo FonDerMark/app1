@@ -8,17 +8,27 @@
 <body>
 {% block body %}
 
-    {% block header %}
-        <button>One</button>
-        <button>Two</button>
-        <button>Three</button>
-    {% endblock %}
+    <header>
 
-    {% block content %}
-    {% endblock %}
+        {% block header %}
+            Мои проекты
+        {% endblock %}
 
-    {% block footer %}
-    {% endblock %}
+    </header>
+
+    <main>
+        {% block content %}
+                <button><a href="/cryptocraphy">Cryptocraphy</a></button>
+                <button>Two</button>
+                <button>Three</button>
+        {% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %}
+            <
+        {% endblock %}
+    </footer>
 
 {% endblock %}
 </body>
