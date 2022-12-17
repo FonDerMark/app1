@@ -1,4 +1,12 @@
 {% extends 'web/html/base.html' %}
 {% block content %}
-    11
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <div>
+            <button type="submit">Отправить</button>
+            <a href="#"><button>Зашифровать</button></a>
+            <a href="#"><button>Расшифровать</button></a>
+        </div>
+    </form>
 {% endblock %}
