@@ -23,7 +23,7 @@ from main import views as main_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_views.index),
-    path('cryptocraphy/', include('cryptography_.urls')),
+    path('cryptography/', include('cryptography_.urls')),
 ]
 
 if settings.DEBUG:

@@ -3,7 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My projects</title>
+    <link rel="stylesheet" href="{% static 'styles/base.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
 <body>
 {% block body %}
@@ -11,16 +14,39 @@
     <header>
 
         {% block header %}
-            Мои проекты
+            <h1 class="header__title">Мои проекты</h1>
         {% endblock %}
 
     </header>
 
     <main>
         {% block content %}
-                <button><a href="/cryptocraphy">Cryptocraphy</a></button>
-                <button>Two</button>
-                <button>Three</button>
+        <section>
+            <div class="card-grid">
+                <a class="card" href="/cryptocraphy">
+                    <div class="card__background"></div>
+                    <div class="card__content">
+                        <h3 class="card__heading">Cryptography</h3>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background"></div>
+                    <div class="card__content">
+                        <h3 class="card__heading">Example</h3>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background"></div>
+                    <div class="card__content">
+                        <h3 class="card__heading">Example</h3>
+                    </div>
+                </a>
+<!--                <button><a href="/cryptocraphy">Cryptocraphy</a></button>-->
+<!--                <button>Two</button>-->
+<!--                <button>Three</button>-->
+            </div>
+        </section>
+
         {% endblock %}
     </main>
 
