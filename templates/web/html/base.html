@@ -9,52 +9,28 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
 <body>
+
 {% block body %}
 
-    <header>
+    {% block header %}
+    <header class="header">
 
-        {% block header %}
-            <h1 class="header__title">Мои проекты</h1>
-        {% endblock %}
+            <h1 class="header__title">My Projects</h1>
 
     </header>
+    {% endblock %}
 
+    {% block content %}
     <main>
-        {% block content %}
-        <section>
-            <div class="card-grid">
-                <a class="card" href="/cryptocraphy">
-                    <div class="card__background"></div>
-                    <div class="card__content">
-                        <h3 class="card__heading">Cryptography</h3>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__background"></div>
-                    <div class="card__content">
-                        <h3 class="card__heading">Example</h3>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__background"></div>
-                    <div class="card__content">
-                        <h3 class="card__heading">Example</h3>
-                    </div>
-                </a>
-<!--                <button><a href="/cryptocraphy">Cryptocraphy</a></button>-->
-<!--                <button>Two</button>-->
-<!--                <button>Three</button>-->
-            </div>
-        </section>
 
-        {% endblock %}
     </main>
+    {% endblock %}
 
+    {% block footer %}
     <footer>
-        {% block footer %}
-            <
-        {% endblock %}
+
     </footer>
+    {% endblock %}
 
 {% endblock %}
 </body>
