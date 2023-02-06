@@ -144,3 +144,17 @@ section{
   line-height: 1.4;
   word-spacing: 100vw;
 }
+
+.programm_content{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.programm_screen{
+  color: #b9b9b9;
+  width: 640px;
+  height: 480px;
+  background-color: rgba(0,0,255,0.2)
+}
