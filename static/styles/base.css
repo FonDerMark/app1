@@ -29,6 +29,9 @@ body{
   background-image: url("../images/chernii-strogii-fon-5.jpg");
   background-size: cover;
 }
+.non-decorate{
+  text-decoration: none;
+}
 
 .header{
   background-color: rgba(255,0,255,0.5);
@@ -42,6 +45,7 @@ body{
   font-size: 40px;
   text-transform: uppercase;
 }
+
 section{
   align-items: flex-start;
   display: flex;

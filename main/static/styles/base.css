@@ -44,6 +44,11 @@ body{
   font-size: 40px;
   text-transform: uppercase;
 }
+
+.non-decorate{
+  text-decoration: none;
+}
+
 section{
   align-items: flex-start;
   display: flex;
