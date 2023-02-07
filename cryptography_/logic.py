@@ -1,9 +1,10 @@
 from cryptography.fernet import Fernet
 from os.path import join, exists
 
-key_folder_path = 'keys'
-encrypted_path = 'files/encrypted'
-decrypted_path = 'files/decrypted'
+key_folder_path = '../media/cryptography/keys'
+files_path = '../media/cryptography/files'
+encrypted_path = '../media/cryptography/encrypted'
+decrypted_path = '../media/cryptography/decrypted'
 
 
 def write_key(key_name='crypto.key'):
