@@ -1,4 +1,8 @@
 {% extends 'web/html/programm.html' %}
 {% block programm %}
-    Данное приложение!
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Отправить</button>
+    </form>
 {% endblock %}
