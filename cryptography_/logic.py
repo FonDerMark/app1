@@ -1,7 +1,7 @@
 from cryptography.fernet import Fernet
 from os.path import join, exists
 
-key_folder_path = 'cks'
+key_folder_path = 'keys'
 encrypted_path = 'files/encrypted'
 decrypted_path = 'files/decrypted'
 
@@ -13,7 +13,7 @@ def write_key(key_name='crypto.key'):
         print('Файл уже создан')
     else:
         key = Fernet.generate_key()
-        with open(join('cks', key_name), 'wb') as file:
+        with open(join(key_folder_path, key_name), 'wb') as file:
             file.write(key)
 
 
