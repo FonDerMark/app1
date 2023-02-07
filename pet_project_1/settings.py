@@ -148,6 +148,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Settings that differ for an application running on a local machine and for deployed to a server
 if env('ON_SERVER') == 'True':
-    MEDIA_ROOT = '/storage/app1/'
+    MEDIA_ROOT = '/storage/app2/'
 else:
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
