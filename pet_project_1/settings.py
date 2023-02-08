@@ -143,13 +143,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = '/storage/app1/static'
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-if ON_SERVER:
-    STATIC_ROOT = '/storage/app1/static'
-    MEDIA_ROOT = '/storage/app1/media'
+#MEDIA_ROOT = '/storage/app1/media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -157,7 +155,3 @@ if ON_SERVER:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Settings that differ for an application running on a local machine and for deployed to a server
-if env('ON_SERVER') == 'True':
-    pass
-else:
-    pass
