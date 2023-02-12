@@ -73,6 +73,7 @@ def test_logic(request):
             pyAesCrypt.encryptFile(file.read(), fOut, password, bufferSize)
             return FileResponse(fOut, as_attachment=True, filename=file.name)
         elif request.POST.get('decrypt-button'):
+            pass
             # ctlen = len(fIn.getvalue())
             # pyAesCrypt.decryptStream(fIn, fDec, password, bufferSize, ctlen)
             # return FileResponse(fOut, as_attachment=True, filename=file.name)
