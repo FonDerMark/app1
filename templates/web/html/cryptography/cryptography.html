@@ -1,0 +1,9 @@
+{% extends 'web/html/programm.html' %}
+{% block programm %}
+    <h2>Description</h2>
+    <a href="encrypt/">Encrypt</a>
+    <a href="{% url 'decrypt' %}">Decrypt</a>
+    {% if file %}
+        <a href="{% url 'cg_download' file %}">{{ file }}</a>
+    {% endif %}
+{% endblock %}
