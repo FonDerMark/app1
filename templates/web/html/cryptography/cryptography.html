@@ -1,18 +1,16 @@
 {% extends 'web/html/programm.html' %}
 {% block programm %}
+    <h2>Описание</h2>
+    <p>This programm</p>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        <div>
-            <label>Выбрать файл</label>
-            <input type="file" name="file">
+        <div class="mb-3">
+            <label for="formFile"></label>
+            <input type="file" id="formFile" name="file">
         </div>
-        <div>
-            <label>Введите пароль</label>
-            <input type="text" name="password">
-        </div>
-        <div>
-            <button type="submit" name="encrypt-button" value="encrypt">Зашифровать</button>
-            <button type="submit" name="decrypt-button" value="decrypt">Расшифровать</button>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn" type="submit" name="encrypt-button" value="encrypt">Зашифровать</button>
+            <button class="btn" type="submit" name="decrypt-button" value="decrypt">Расшифровать</button>
         </div>
     </form>
 {% endblock %}
