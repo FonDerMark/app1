@@ -3,7 +3,7 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 /static
 /media
-/db.sqlite3
+db.sqlite3
 /pet_project_1/settings.py
 # User-specific stuff
 .idea/**/workspace.xml
