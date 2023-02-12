@@ -1,16 +1,20 @@
 {% extends 'web/html/programm.html' %}
 {% block programm %}
-    <h2>Описание</h2>
-    <p>This programm</p>
-    <form method="post" enctype="multipart/form-data">
+    <h1 class="h_title">Cryptography</h1>
+    <h2 class="h_title">Описание</h2>
+    <p>     Данная программа предназначена для кодирования/раскодирования файлов.
+        Бизнес-логика построена на базе библиотеки cryptography. В поле ниже,
+        укажите файл</p>
+    <form class="margin-5" method="post" enctype="multipart/form-data" id="form1">
         {% csrf_token %}
         <div class="mb-3">
             <label for="formFile"></label>
-            <input type="file" id="formFile" name="file">
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button class="btn" type="submit" name="encrypt-button" value="encrypt">Зашифровать</button>
-            <button class="btn" type="submit" name="decrypt-button" value="decrypt">Расшифровать</button>
+            <input class="btn" type="file" id="formFile" name="file">
         </div>
     </form>
+    <p>Клавишей ниже укажите необходимое действие</p>
+    <div class="margin-5">
+        <button form="form1" class="btn" type="submit" name="encrypt-button" value="encrypt">Зашифровать</button>
+        <button form="form1" class="btn" type="submit" name="decrypt-button" value="decrypt">Расшифровать</button>
+    </div>
 {% endblock %}
