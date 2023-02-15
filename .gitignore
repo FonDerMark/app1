@@ -4,7 +4,6 @@
 /static
 /media
 db.sqlite3
-/pet_project_1/settings.py
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
