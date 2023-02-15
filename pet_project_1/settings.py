@@ -99,12 +99,6 @@ WSGI_APPLICATION = 'pet_project_1.wsgi.application'
 #         'PORT': '5432',
 #     }
 # }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
@@ -151,9 +145,25 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 if ON_SERVER:
     STATIC_ROOT = '/storage/app1/static'
     MEDIA_ROOT = '/storage/app1/media'
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'petprojects',
+            'USER': 'petprojectsuser',
+            'PASSWORD': '565137785Aa',
+            'HOST': 'fondermark.ru',
+            'PORT': '5432',
+        }
+    }
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
