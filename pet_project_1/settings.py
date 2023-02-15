@@ -131,6 +131,16 @@ USE_I18N = True
 
 USE_TZ = True
 
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'petprojects',
+#             'USER': 'petprojectsuser',
+#             'PASSWORD': '565137785Aa',
+#             'HOST': 'fondermark.ru',
+#             'PORT': '5432',
+#         }
+# }
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
