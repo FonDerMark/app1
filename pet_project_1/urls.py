@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_views.index, name='index'),
     path('cryptography/', include('cryptography_.urls')),
+    path('sqltrainer/', include('sql_trainer.urls')),
 ]
 
 if settings.DEBUG:

@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'cryptography_',
+    'sql_trainer',
 ]
 
 MIDDLEWARE = [

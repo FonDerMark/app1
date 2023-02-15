@@ -3,13 +3,13 @@
 {% block content %}
     <section>
         <div class="card-grid">
-            <a class="card" href="/cryptography/">
+            <a class="card" href="{% url 'cg' %}">
                 <div class="card__background card__background_crypto"></div>
                 <div class="card__content">
                     <h3 class="card__heading">Cryptography</h3>
                 </div>
             </a>
-            <a class="card" href="/parse/">
+            <a class="card" href="{% url 'st' %}">
                 <div class="card__background card__background_other"></div>
                 <div class="card__content">
                     <h3 class="card__heading">YndxParser</h3>
