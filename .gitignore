@@ -5,7 +5,7 @@
 /media
 db.sqlite3
 /pet_project_1/settings.py
-.gitignore
+/.gitignore
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
