@@ -1,0 +1,11 @@
+{% extends 'web/html/programm.html' %}
+{% block programm %}
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file">
+        <button type="submit">Send</button>
+    </form>
+    {% for file in files %}
+        <a href="remove/{{ file.name }}">{{ file.name }}</a>
+    {% endfor %}
+{% endblock %}

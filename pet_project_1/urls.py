@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+import upload.views
 from main import views as main_views
 
 urlpatterns = [
@@ -25,6 +26,7 @@ urlpatterns = [
     path('', main_views.index, name='index'),
     path('cryptography/', include('cryptography_.urls')),
     path('sqltrainer/', include('sql_trainer.urls')),
+    path('upload/', include('upload.urls')),
 ]
 
 if settings.DEBUG:
