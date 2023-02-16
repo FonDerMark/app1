@@ -9,6 +9,7 @@ APP_ROOT = os.path.join(MEDIA_ROOT, 'files')
 # Create your views here.
 def index(request):
     if request.method == 'GET':
+        context = {}
         try:
             context = {
                 'files': os.scandir(APP_ROOT),
