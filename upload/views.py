@@ -10,12 +10,10 @@ APP_ROOT = os.path.join(MEDIA_ROOT, 'files')
 def index(request):
     if request.method == 'GET':
         context = {}
-        try:
+        if context:
             context = {
                 'files': os.scandir(APP_ROOT),
             }
-        except:
-            pass
         return render(request, 'web/html/upload/upload.html', context)
     if request.method == 'POST':
         if not os.path.exists(APP_ROOT):
