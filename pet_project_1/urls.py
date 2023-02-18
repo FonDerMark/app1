@@ -26,6 +26,7 @@ urlpatterns = [
     path('', main_views.index, name='index'),
     path('cryptography/', include('cryptography_.urls')),
     path('sqltrainer/', include('sql_trainer.urls')),
+    path('videohub/', include('videohub.urls')),
     path('upload/', include('upload.urls')),
 ]
 

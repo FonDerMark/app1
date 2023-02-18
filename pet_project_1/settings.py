@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'cryptography_',
     'sql_trainer',
     'upload',
+    'videohub',
 ]
 
 MIDDLEWARE = [
