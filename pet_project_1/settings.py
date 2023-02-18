@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'main',
     'cryptography_',
     'sql_trainer',
+    'parse',
     'upload',
 ]
 

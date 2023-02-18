@@ -27,6 +27,7 @@ urlpatterns = [
     path('cryptography/', include('cryptography_.urls')),
     path('sqltrainer/', include('sql_trainer.urls')),
     path('upload/', include('upload.urls')),
+    path('parse/', include('parse.urls')),
 ]
 
 if settings.DEBUG:
