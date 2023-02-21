@@ -7,3 +7,4 @@ beautifulsoup4==4.11.2
 requests==2.28.2
 lxml==4.9.2
 fake-useragent==1.1.0
+yndx-parse==0.2

@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'sql_trainer',
     'parse',
     'upload',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -156,3 +157,11 @@ else:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Settings that differ for an application running on a local machine and for deployed to a server
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
