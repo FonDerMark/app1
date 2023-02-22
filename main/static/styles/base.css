@@ -192,3 +192,17 @@ section{
 .margin-5{
   margin: 5px;
 }
+
+.weather-table__other{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 1fr;
+}
+
+
+.weather-table__date{
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid white;
+}

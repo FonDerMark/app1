@@ -1,4 +1,14 @@
 {% extends 'web/html/programm.html' %}
 {% block programm %}
-
+    <h2>Прогноз актуален на {{ today }}</h2>
+    <div class="weather-table__other">
+        {% for day, value in weather.items %}
+            <div class="weather-table__date">
+                <div>Утром {{ value.0 }}</div>
+                <div>Днем {{ value.1 }}</div>
+                <div>Вечером {{ value.2 }}</div>
+                <div>Ночью {{ value.3 }}</div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}

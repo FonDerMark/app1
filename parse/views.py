@@ -1,14 +1,14 @@
+import json
+
+from django.shortcuts import render
 from yndx_parse import YndxParse
-from django.http import JsonResponse
 
 
 def index(request):
-    yp = YndxParse('Лесной Свердловская', save_json=False)
-    print(yp.get_weather())
-    return JsonResponse(yp.get_weather(), safe=False, charset='utf-8')
+    context = json.loads(get_weather())
+    return render(request, 'web/html/parse/parse.html', context)
 
 
-def json_weather(request, city='Лесной Свердловская'):
+def get_weather(city='Лесной Свердловская') -> json:
     yp = YndxParse(city, save_json=False)
-    print(yp.get_weather())
-    return JsonResponse(yp.get_weather(), safe=False, charset='utf-8')
+    return yp.get_weather()
