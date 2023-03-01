@@ -1,11 +1,12 @@
 import json
-
 from django.shortcuts import render
 from yndx_parse import YndxParse
 
 
 def index(request):
-    context = json.loads(get_weather())
+    context = {
+        'data': get_weather(),
+    }
     return render(request, 'web/html/parse/parse.html', context)
 
 

@@ -18,7 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.11 (app1)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.10 (app1)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="purecss" level="application" />
   </component>

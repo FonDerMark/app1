@@ -54,7 +54,6 @@ INSTALLED_APPS = [
     'sql_trainer',
     'parse',
     'upload',
-    'rest_framework',
 ]
 
 MIDDLEWARE = [

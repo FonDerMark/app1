@@ -28,7 +28,6 @@ urlpatterns = [
     path('sqltrainer/', include('sql_trainer.urls')),
     path('upload/', include('upload.urls')),
     path('parse/', include('parse.urls')),
-    path('api-auth/', include('rest_framework.urls')),
 ]
 
 if settings.DEBUG:
